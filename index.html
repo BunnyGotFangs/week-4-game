@@ -12,7 +12,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
     <title>SW Battle</title>
+
 </head>
 
 
@@ -27,56 +29,56 @@
 
     </div>
 <br>
-    <div class="player choice">
+    <div container="playerchoice">
 
         <h2>Choose Your Character</h2>
 
         <div class="row">
 
-            <div class="col-md-3">
+            <div class="col-md-3" id="yoda">
 
-                    <figure id="one">
+                    <button id="one">
                         <img src="assets/images/yoda.jpeg" class="rounded-circle" width="150" height="150" alt="Yoda" title="Yoda" />
                             <p>
                                 <figcaption id="figcap01">The Wise One</figcaption>
                             </p>    
-                    </figure>
+                    </button>
             </div>
 
-            <div class="col-md-3">        
-                    <figure id="two">
+            <div class="col-md-3" id="solo">        
+                    <button id="two">
                         <img src="assets/images/Han Solo.jpeg" class="rounded-circle" width="150" height="150" alt="Solo" title="Solo" />
                             <p>
                                 <figcaption id="figcap01">The Smart Ass</figcaption>
                             </p>    
-                    </figure>
+                    </button>
             </div>
 
-            <div class="col-md-3">
-                    <figure id="three">
+            <div class="col-md-3" id="ewok">
+                    <button id="three">
                         <img src="assets/images/ewok.jpeg" class="rounded-circle" width="150" height="150" alt="Ewok" title="Ewok" />
                             <p>
                                 <figcaption id="figcap01">Cute til' ANNOYING</figcaption>
                             </p>    
-                    </figure>
+                    </button>
             </div>
 
-            <div class="col-md-3">
-                    <figure id="four">
+            <div class="col-md-3" id="sidious">
+                    <button id="four">
                         <img src="assets/images/Sidious.jpeg" class="rounded-circle" width="150" height="150" alt="Sidious" title="Sidious" />
                             <p>
                                 <figcaption id="figcap01">The Manipulator</figcaption>
                             </p>    
-                    </figure>
+                    </button>
         </div>        
         <br>
-        <div class="battle player">
+        <div container="battleplayer">
     
             <h2>Currently in Battle</h2>
     
-            <div class="row">
+            <div row="row1">
     
-                <div class="col-md-4">
+                <div column="col-lg-4" "batoneimg">
     
                         <figure id="batone">
                             <p>
@@ -85,8 +87,23 @@
                             </p>    
                         </figure>
                 </div>
+            </div>
 
-                <div class="col-md-4">
+            <div row="row2">
+
+                <div column="col-lg-4" "battwoimg">        
+                        <figure id="battwo">
+                            <p>
+                                <figcaption id="batcap2">Your Enemy</figcaption>
+                                <span class="badge badge-dark">Dark</span>
+                            </p>   
+                        </figure>
+                </div>
+            </div>
+
+            <div row="row3">
+
+                <div column="col-lg-4">
     
                     <div id="attbut">
                         <p>
@@ -95,19 +112,11 @@
                     </div>
 
                 </div>
+            </div>  
 
-                <div class="col-md-4">        
-                        <figure id="battwo">
-                            <p>
-                                <figcaption id="batcap2">Your Enemy</figcaption>
-                                <span class="badge badge-dark">Dark</span>
-                            </p>   
-                        </figure>
-                </div>
-    
             </div>
             <br>
-            <div class="score">
+            <div container="score">
         
                 <h2>Ruler of the Galaxy</h2>
         
@@ -126,8 +135,6 @@
         </div>
 
     </div>
-
-    <script src="javascript/game.js"></script>
-        
+<script src="assets/javascript/game.js"></script>        
 </body>
 </html>

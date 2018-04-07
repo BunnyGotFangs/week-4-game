@@ -135,20 +135,21 @@ console.log(saber);
 // If player 1 (light side); reduce health of Player 2 (dark side)
         if (attack <= lightSide)
     { 
-        dSH2 = (darkSideHealth - saber);
-        console.log(dSH2);
+        dSH2 = (darkSideHealth --- saber);
+        console.log("dSH2" + dSH2);
         $('.badge-dark').text(dSH2);
     }
 // If player 2 (dark side); reduce health of Player 1 (light side)    
-else if (dSH2 <= 0)
+else if (attack > lightSide)
     {    
+        lSH2 = (lightSideHealth --- saber);
+        console.log("lSH2" + lSH2);
+        $('.badge-light').text(lSH2);
         $('#wins').append("<h2> YOU HAVE DEFEATED YOUR ENEMY FORCES! </h2>");
     }
-else if (dSH2 > 0)
+else if (lSH2 < 0)
         {    
-        lSH2 = (lightSideHealth - saber);
-        console.log(lSH2);
-        $('.badge-light').text(lSH2);
+            $('#wins').append("<h2> YOU HAVE DEFEATED YOUR ENEMY FORCES! </h2>");
     }
 else    
     {

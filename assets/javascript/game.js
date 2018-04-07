@@ -73,12 +73,12 @@ var loss;
     console.log('evil evil man');
     $(this).hide("#four");
 // Fade in selected character to Battle area for light side
-    $("#batone").append('<img src="assets/images/sidious.jpeg" width="150" height="150" />' );
+    $("#batone").append('<img src="assets/images/Sidious.jpeg" width="150" height="150" />' );
 // Generate a random number for Lightside player health between (100 - 250)
    
 // Fade in selected character to Battle area for Dark side if battle character 1 is populated (light side)
     if ("#batone" === true)
-    $("#battwo").append('<img src="assets/images/sidious.jpeg" width="150" height="150"/>');
+    $("#battwo").append('<img src="assets/images/Sidious.jpeg" width="150" height="150"/>');
     //else  alert("You Are Ready for Battle. Click 'OK' to Continue.");
 }); 
 // Attack button is clicked to begin battle
